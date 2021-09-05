@@ -1,0 +1,12 @@
+tasks:
+  Run all tasks:
+    shell: python -m robot --report NONE --outputdir Reports --logtitle "Task log" tasks.robot
+
+condaConfigFile: conda.yaml
+artifactsDir: Reports
+PATH:
+  - .
+PYTHONPATH:
+  - .
+ignoreFiles:
+  - .gitignore
